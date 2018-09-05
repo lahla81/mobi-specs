@@ -15,9 +15,11 @@
             <div  id="navbar" class="c-navbar fixed-top navbar navbar-expand-lg">
                 <a href="/" class="navbar-brand c-navbar__brand"><img src="./assets/images/logo.png" alt=""></a>
                 <div class="c-navbar__search">
-                    <div class="c-textfield">
-                        <input type="text" class="c-textfield__input" id="normal" placeholder="إبحث هنا">
-                        <button class="c-btn paper c-textfield__btn">إبحث</button>
+                    <div class="c-textfield input-group">
+                        <input type="text" class="c-textfield__input form-control" id="normal" placeholder="إبحث هنا">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-secondary c-btn paper c-textfield__btn" type="button" id="button-addon2">إبحث</button>
+                        </div>
                     </div>
                 </div>
                 <button class="navbar-toggler c-navbar__btn c-btn paper paper-raise" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -451,10 +453,18 @@
                     <div class="row c-contact__row justify-content-center">
                         <div class="col-sm-6 col-8">
                             <form action="submit" class="c-contact__form">
-                                <input type="text" class="form-control c-contact__input" placeholder="الإسم الكامل" required>
-                                <input type="text" class="form-control c-contact__input" placeholder="البريد الإلكتروني" required>
-                                <input class="form-control c-contact__input" type="text" placeholder="الموضوع" required>
-                                <textarea name="massage" placeholder="الرسالة" required cols="30" rows="6" class="form-control c-contact__text-area"></textarea>
+                                <div class="form-group c-contact__form-group">
+                                    <input type="text" name="name" minlength="2" class="form-control c-contact__input" placeholder="الإسم الكامل" required>
+                                </div>
+                                <div class="form-group c-contact__form-group">
+                                    <input type="text" name="e-mail" class="form-control c-contact__input" placeholder="البريد الإلكتروني" required>
+                                </div>
+                                <div class="form-group c-contact__form-group">
+                                    <input type="text" name="subject" class="form-control c-contact__input" placeholder="الموضوع" required>
+                                </div>
+                                <div class="form-group c-contact__form-group">
+                                    <textarea name="massage" placeholder="الرسالة" required cols="30" rows="6" class="form-control c-contact__text-area"></textarea>
+                                </div>
                                 <button type="submit" class="c-btn c-contact__btn paper">أرسل</button>
                             </form>
                         </div>
