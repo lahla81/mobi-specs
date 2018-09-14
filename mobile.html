@@ -60,9 +60,9 @@
                     </a>
                 </div>
                 <div class="col-12 col-sm-8 c-ads__top-full-width">
-                    <a href="">
-                        <img src="./assets/images/banar-728-90.jpg" alt="">
-                    </a>
+                    <amp-auto-ads type="adsense"
+                        data-ad-client="ca-pub-5028976758660106">
+                    </amp-auto-ads>
                 </div>
             </div>
         </section>
@@ -131,6 +131,7 @@
        <section id="c-specs">
            <div class="row">
                 <div class="col-sm-8 col-12 c-specs__head">
+                    <div class="c-specs-container">
                     <div class="row c-specs__title">
                         <h3>سوني XPERIA Z5</h3>
                         <a href="/" class="c-btn c-specs__social-link c-specs__facebock"><i class="c-icon icon-facebook"></i></a>
@@ -190,39 +191,37 @@
                     <div class="row c-specs__links">
                             <ul class="list-inline c-specs__menu">
                                 <li class="list-inline-item c-specs__item">
-                                    <i class="c-icon icon-eye"></i>
-                                    <a href="." class="c-list-inline-item__link c-specs__link  active">مراجعة</a>
+                                    <button class="tablinks c-specs__link" onclick="openTab(event, 'Review')"><i class="c-icon icon-eye"></i> مراجعة</button>
                                 </li>
                                 <li class="list-inline-item c-specs__item">
-                                        <i class="c-icon icon-newspaper"></i>
-                                    <a href="" class="c-list-inline-item__link c-specs__link">الآراء</a>
+                                    <button class="tablinks c-specs__link" onclick="openTab(event, 'Openion')"><i class="c-icon icon-newspaper"></i> الآراء</button>
                                 </li>
                                 <li class="list-inline-item c-specs__item">
-                                        <i class="c-icon icon-compare"></i>
-                                    <a href="" class="c-list-inline-item__link c-specs__link">مقارنة</a>
+                                    <button class="tablinks c-specs__link"><i class="c-icon icon-compare"></i> مقارنة</button>
                                 </li>
                                 <li class="list-inline-item c-specs__item">
-                                        <i class="c-icon icon-images"></i>
-                                    <a href="" class="c-list-inline-item__link c-specs__link">صور</a>
+                                    <button class="tablinks c-specs__link" onclick="openTab(event, 'Photos')"><i class="c-icon icon-images"></i> صور</button>
                                 </li>
                                 <li class="list-inline-item c-specs__item">
-                                        <i class="c-icon icon-tablet"></i>
-                                    <a href="" class="c-list-inline-item__link c-specs__link">مواصفة</a>
+                                    <button class="tablinks c-specs__link" onclick="openTab(event, 'Specs')" id="defaultOpen"><i class="c-icon icon-tablet"></i> مواصفة</button>
                                 </li>
                             </ul>
                     </div>
                 </div>
+                </div>
                 <div class="col-sm-4 col-12 c-specs__ads text-center">
-                    <img src="./assets/images/banar-250-250.png" alt="">
+                    <amp-auto-ads type="adsense"
+                        data-ad-client="ca-pub-5028976758660106">
+                    </amp-auto-ads>
                 </div>
             </div>
        </section>
 
-       <section id="c-tabs">
+       <section id="c-mobile">
            <div class="row">
-                <div class="col-sm-8 col-12 c-specification">
-                    <div class="">
-                        <table>
+                <div class="col-sm-8 col-12 c-mobile">
+                    <div id="Specs" class="tabcontent">
+                        <table class="c-mobile__network" cellspacing="0">
                             <tbody>
                                 <tr class="tr-hover">
                                     <th rowspan="15" scope="row">الشبكة</th>
@@ -255,7 +254,7 @@
                                 </tr>
                             </tbody>
                         </table>
-                        <table>
+                        <table cellspacing="0">
                             <tbody>
                                 <tr>
                                     <th rowspan="2" scope="row">تاريخ الصنع</th>
@@ -268,7 +267,7 @@
                                 </tr>
                             </tbody>
                         </table>
-                        <table>
+                        <table cellspacing="0">
                             <tbody>
                                 <tr>
                                     <th rowspan="6" scope="row">الهيكل</th>
@@ -293,28 +292,29 @@
                                 </tr>    
                             </tbody>
                         </table>
-                        <table>
+                        <table cellspacing="0">
                             <tbody>
                                 <tr>
                                     <th rowspan="6" scope="row">الشاشة</th>
                                     <td class="ttl"><a href="glossary.php3?term=display-type">النوع</a></td>
-                                    <td class="nfo" data-spec="displaytype">IPS LCD capacitive touchscreen, 16M colors</td>
+                                    <td class="nfo" data-spec="displaytype">ال سي دي / شاشة لمس مكثفة
+                                        <br> 16 مليون لون</td>
                                 </tr>
                                 <tr>
                                     <td class="ttl"><a href="#" onclick="helpW('h_dsize.htm');">المقاس</a></td>
-                                    <td class="nfo" data-spec="displaysize">5.2 inches<br> 73.2 سم<sup>2</sup> <br> نسبة الشاشة الي جسم الموبيل ~69.6% </td>
+                                    <td class="nfo" data-spec="displaysize">5.2 بوصة<br> 73.2 سم<sup>2</sup> <br> نسبة الشاشة الي جسم الموبيل ~69.6% </td>
                                 </tr>
                                 <tr>
                                     <td class="ttl"><a href="glossary.php3?term=resolution">الدقة</a></td>
-                                    <td class="nfo" data-spec="displayresolution">1080 x 1920 pixels, 16:9 ratio (~428 ppi density)</td>
+                                    <td class="nfo" data-spec="displayresolution">1080x1920 بكسل <br> نسبة الطول الي العرض  16:9<br> كثافة ~428 بكسل لكل بوصة</td>
                                 </tr>
                                 <tr>
                                     <td class="ttl"><a href="glossary.php3?term=multitouch">اللمس</a></td>
-                                    <td class="nfo">Yes, up to 10 fingers</td>
+                                    <td class="nfo">متعدد اللمسات , حتي 10 أصابع</td>
                                 </tr>
                                 <tr>
                                     <td class="ttl"><a href="glossary.php3?term=screen-protection">الحماية</a></td>
-                                    <td class="nfo" data-spec="displayprotection">Scratch-resistant glass, oleophobic coating</td>
+                                    <td class="nfo" data-spec="displayprotection">زجاج مقاوم للخدش, oleophobic coating</td>
                                 </tr>
                                 <tr>        
                                     <td class="ttl">&nbsp;</td>
@@ -323,6 +323,248 @@
                                 </tr>   
                             </tbody>
                         </table>
+                        <table cellspacing="0">
+                            <tbody>
+                                <tr>
+                                    <th rowspan="4" scope="row">النظام</th>
+                                    <td class="ttl"><a href="glossary.php3?term=os">نظام التشغيل</a></td>
+                                    <td class="nfo" data-spec="os">أندرويد 5.1.1 لولي بوب يمكن التحديث إلي أندرويد 7.1.1 نوجا</td>
+                                </tr>
+                                <tr>
+                                    <td class="ttl"><a href="glossary.php3?term=chipset">الرقائق</a></td>
+                                    <td class="nfo" data-spec="chipset">Qualcomm MSM8994 Snapdragon 810</td>
+                                </tr>
+                                <tr>
+                                    <td class="ttl"><a href="glossary.php3?term=cpu">البروسيسور</a></td>
+                                    <td class="nfo" data-spec="cpu">ثماني النواة <br> 4x1.5 GHz Cortex-A53 <br> 4x2.0 GHz Cortex-A57</td>
+                                </tr>
+                                <tr>
+                                    <td class="ttl"><a href="glossary.php3?term=gpu">بروسيسور الجرافيك</a></td>
+                                    <td class="nfo" data-spec="gpu">Adreno 430</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="c-mobile__memory" cellspacing="0">
+                            <tbody>
+                                <tr>
+                                    <th rowspan="5" scope="row">الذاكرة</th>
+                                    <td class="ttl"><a href="glossary.php3?term=memory-card-slot">الخارجية</a></td>                        
+                                    <td class="nfo" data-spec="memoryslot"> ذاكرة صغيرة حتي 256 ميجا من النوع microSD </td></tr>
+                                <tr>
+                                    <td class="ttl"><a href="glossary.php3?term=dynamic-memory">الداخلبة</a></td>
+                                    <td class="nfo" data-spec="internalmemory">32 جيجا بايت , 3 جيجا رام</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="c-mobile__main--camera" cellspacing="0">
+                            <tbody>
+                                <tr>
+                                    <th rowspan="4" scope="row" class="small-line-height">الكاميرة</th>
+                                    <td class="ttl"><a href="glossary.php3?term=camera">واحدة</a></td>
+                                    <td class="nfo" data-spec="cam1modules"> 23 ميجا بكسل , التركيز البؤري 2 ,  MP, f/2.0, 24mm, 1/2.3", PDAF</td>
+                                </tr>
+                                <tr>
+                                    <td class="ttl"><a href="glossary.php3?term=camera">الخصائص</a></td>
+                                    <td class="nfo" data-spec="cam1features">فلاش, هاي ديفينيشن, بانوراما</td>
+                                </tr>
+                                <tr>
+                                    <td class="ttl"><a href="glossary.php3?term=camera">الفيديو</a></td>
+                                    <td class="nfo" data-spec="cam1video">2160p@30fps, 1080p@60fps, 720p@120fps, هاي ديفينيشن</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="c-mobile-selfi--camera" cellspacing="0">
+                            <tbody>
+                                <tr>
+                                    <th rowspan="4" scope="row" class="small-line-height">الكاميرا الأمامية</th>
+                                    <td class="ttl"><a href="glossary.php3?term=secondary-camera">واحدة</a></td>
+                                    <td class="nfo" data-spec="cam2modules">5.1 ميجا بكسل, التركيز البؤري 2.4</td>
+                                </tr>
+                                <tr>
+                                    <td class="ttl"><a href="glossary.php3?term=secondary-camera">الخصائص</a></td>
+                                    <td class="nfo" data-spec="cam2features">هاي ديفينيشن</td>
+                                </tr>
+                                <tr>
+                                    <td class="ttl"><a href="glossary.php3?term=secondary-camera">الفيديو</a></td>
+                                    <td class="nfo" data-spec="cam2video">جودة 1080 بكسل /30 فرام لكل ثانية</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="c-mobile-sound" cellspacing="0">
+                            <tbody>
+                                <tr>
+                                    <th rowspan="4" scope="row">الأصوات</th>
+                                    <td class="ttl"><a href="glossary.php3?term=call-alerts">أنواع التنيهات</a></td>
+                                    <td class="nfo">خاصية الإهتزاز, نغمات MP3, WAV</td>
+                                </tr>
+                                <tr>
+                                    <td class="ttl"><a href="glossary.php3?term=loudspeaker">مكبر الصوت</a> </td>
+                                    <td class="nfo">يوجد مع خاصية الإستريو</td>
+                                </tr>
+                                <tr>
+                                    <td class="ttl"><a href="glossary.php3?term=audio-jack">جاك 3.5mm</a> </td>
+                                    <td class="nfo">يوجد</td>
+                                </tr>
+                                <tr>
+                                    <td class="ttl">&nbsp;</td>
+                                    <td class="nfo" data-spec="optionalother">- 24-bit/192kHz audio<br>
+                                    - Active noise cancellation with dedicated mic</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="c-mobile-comms" cellspacing="0">
+                            <tbody>
+                                <tr>
+                                    <th rowspan="9" scope="row">الإتصالات</th>
+                                    <td class="ttl"><a href="glossary.php3?term=wi-fi">اللاسلكية</a></td>
+                                    <td class="nfo" data-spec="wlan">Wi-Fi 802.11 a/b/g/n/ac, dual-band, Wi-Fi Direct, DLNA, hotspot</td>
+                                </tr>
+                                <tr>
+                                    <td class="ttl"><a href="glossary.php3?term=bluetooth">بلوتوث</a></td>
+                                    <td class="nfo" data-spec="bluetooth">4.1, A2DP, aptX</td>
+                                </tr>
+                                <tr>
+                                    <td class="ttl"><a href="glossary.php3?term=gps">نظام تحديد المواقع GPS</a></td>
+                                    <td class="nfo" data-spec="gps">Yes, with A-GPS, GLONASS/ BDS (market dependant)</td>
+                                </tr>  
+                                <tr>
+                                    <td class="ttl"><a href="glossary.php3?term=nfc">NFC</a></td>
+                                    <td class="nfo" data-spec="nfc">Yes</td>
+                                </tr>
+                                <tr>
+                                    <td class="ttl"><a href="glossary.php3?term=fm-radio">راديو</a></td>
+                                    <td class="nfo" data-spec="radio">راديو RDS & FM</td>
+                                </tr>  
+                                <tr>
+                                    <td class="ttl"><a href="glossary.php3?term=usb">USB</a></td>
+                                    <td class="nfo" data-spec="usb">microUSB 2.0 (MHL 3 TV-out), USB Host</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="c-features" cellspacing="0">
+                            <tbody>
+                                <tr>
+                                    <th rowspan="12" scope="row">المميزات</th>
+                                    <td class="ttl"><a href="glossary.php3?term=sensors">الحساسات</a></td>
+                                    <td class="nfo" data-spec="sensors">بصمة الإصبع جانبية , التسارع, gyro, proximity, compass, barometer</td>
+                                </tr>
+                                <tr>
+                                    <td class="ttl"><a href="glossary.php3?term=messaging">الرسائل</a></td>
+                                    <td class="nfo">SMS(threaded view), MMS, Email, IM, Push Email</td>
+                                </tr>
+                                <tr>
+                                    <td class="ttl"><a href="glossary.php3?term=browser">المتصفح</a></td>
+                                    <td class="nfo">HTML5</td>
+                                </tr> 	
+                                <tr>
+                                    <td class="ttl">&nbsp;</td>
+                                    <td class="nfo" data-spec="featuresother">شحن سريع للبطارية  (Quick Charge 2.0)<br>
+                                        - ANT+ support<br>
+                                        - Xvid/MP4/H.265 player<br>
+                                        - MP3/eAAC+/WAV/Flac player<br>
+                                        - Document viewer<br>
+                                        - Photo/video editor
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table cellspacing="0">
+                            <tbody>
+                                <tr>
+                                    <th rowspan="7" scope="row">Battery</th>
+                                    <td class="ttl">&nbsp;</td>
+                                    <td class="nfo" data-spec="batdescription1">Non-removable Li-Ion 2900 mAh battery</td>
+                                </tr>
+                                <tr>
+                                    <td class="ttl"><a href="glossary.php3?term=stand-by-time">Stand-by</a></td>
+                                    <td class="nfo" data-spec="batstandby1">Up to 520 h (2G) / Up to 540 h (3G)</td>
+                                </tr>
+                                <tr>
+                                    <td class="ttl"><a href="glossary.php3?term=talk-time">Talk time</a></td>
+                                    <td class="nfo" data-spec="battalktime1">Up to 13 h 10 min (2G) / Up to 17 h (3G)</td>
+                                </tr>
+                                <tr>
+                                    <td class="ttl"><a href="glossary.php3?term=music-playback-time">Music play</a></td>
+                                    <td class="nfo" data-spec="batmusicplayback1">Up to 87 h</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table cellspacing="0">
+                            <tbody>
+                                <tr>
+                                    <th rowspan="5" scope="row">Misc</th>
+                                    <td class="ttl"><a href="glossary.php3?term=build">Colors</a></td>
+                                    <td class="nfo" data-spec="colors">White, Graphite Black, Gold, Green, Pink</td>
+                                </tr>
+                                <tr>
+                                    <td class="ttl"><a href="glossary.php3?term=sar">SAR</a></td>
+                                    <td class="nfo" data-spec="sar-us">0.55 W/kg (head) &nbsp; &nbsp; 0.64 W/kg (body) &nbsp; &nbsp; </td>
+                                </tr>
+                                <tr>
+                                    <td class="ttl"><a href="glossary.php3?term=sar">SAR EU</a></td>
+                                    <td class="nfo" data-spec="sar-eu">0.75 W/kg (head) &nbsp; &nbsp; 0.78 W/kg (body) &nbsp; &nbsp; </td>
+                                </tr>
+                                <tr>
+                                    <td class="ttl"><a href="glossary.php3?term=price">Price</a></td>
+                                    <td class="nfo" data-spec="price">About 270 EUR</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table cellspacing="0">
+                            <tbody>
+                                <tr>
+                                    <th rowspan="6" scope="row">Tests</th>
+                                    <td class="ttl"><a href="glossary.php3?term=benchmarking">Performance</a></td>
+                                    <td class="nfo" data-spec="tbench">
+                                        <a class="noUnd" href="benchmark-test.php3?idPhone=7534#show">Basemark OS II: 1354 / Basemark OS II 2.0: 1580<br>Basemark X: 24941</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="ttl"><a href="gsmarena_lab_tests-review-751p2.php">Display</a></td>
+                                    <td class="nfo">
+                                        <a class="noUnd" href="sony_xperia_z5-review-1326p3.php">Contrast ratio: 986 (nominal), 2.88(sunlight)</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="ttl"><a href="gsmarena_lab_tests-review-751p5.php">Camera</a></td>
+                                    <td class="nfo">
+                                        <a class="noUnd" href="piccmp.php3?idType=1&amp;idPhone1=7534&amp;nSuggest=1">Photo</a> / <a class="noUnd" href="vidcmp.php3?idType=3&amp;idPhone1=7534&amp;nSuggest=1">Video</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="ttl"><a href="gsmarena_lab_tests-review-751p3.php">Loudspeaker</a></td>
+                                    <td class="nfo">
+                                        <a class="noUnd" href="sony_xperia_z5-review-1326p6.php">Voice 65dB / Noise 62dB / Ring 66dB</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                <td class="ttl"><a href="gsmarena_lab_tests-review-751p4.php">Audio quality</a></td>
+                                <td class="nfo">
+                                    <a class="noUnd" href="sony_xperia_z5-review-1326p6.php#aq">Noise -95.5dB / Crosstalk -94.8dB</a>
+                                </td>
+                                </tr>
+                                <tr>
+                                    <td class="ttl"><a href="gsmarena_lab_tests-review-751p6.php">Battery life</a></td>
+                                    <td class="nfo" data-spec="batlife">
+                                        <div style="position:relative;">
+                                            <a href="#" onclick="showBatteryPopup(event, 7534); ">Endurance rating 48h</a><div class="popover top" id="battery-popover" style="display: none;"></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="Review" class="tabcontent">
+                        Review
+                    </div>
+                    <div id="Openion" class="tabcontent">
+                        Openion
+                    </div>
+                    <div id="Photos" class="tabcontent">
+                        Photos
                     </div>
                 </div>
                 <div class="col-sm-4 col-12 c-specification">
@@ -365,6 +607,9 @@
         </section>
        
     </div>
+    <script async custom-element="amp-auto-ads"
+        src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
+    </script>
     <script src="./assets/js/jquery-3.3.1.min.js"></script>
     <script src="./assets/js/bootstrap.min.js"></script>
     <script src="./assets/js/jquery.validate.min.js"></script>
